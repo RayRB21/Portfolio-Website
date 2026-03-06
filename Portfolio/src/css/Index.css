@@ -58,7 +58,7 @@ h1{
 }
 
 .line-wide {
-    transform: scaleX(1);
+    transform: rotate(45deg) scaleX(1);
     animation-name: change-width;
 }
 
@@ -69,11 +69,11 @@ h1{
 
 @keyframes change-width {
     0% {
-        transform: scaleX(0); 
+        transform: rotate(45deg) scaleX(0);
     }
 
     100% {
-        transform: scaleX(1);  
+        transform: rotate(45deg) scaleX(1); 
     }
 } 
 
