@@ -1,3 +1,18 @@
 .custom-navbar {
-  background-color: #4a90e2; /* your colour */
+  background-color: #101c38; /* your colour */
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.9)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1)
+  }
+}
+
+.logos {
+  animation: fade-down 0.5s;
 }

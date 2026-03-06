@@ -2,8 +2,6 @@ import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
-import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   const items = ["New York", "Paris", "London", "Brighton"];
@@ -20,11 +18,9 @@ function App() {
             
     </div>*/
 
-    <div>
-      <Navbar />
+    <>
       <Home />
-      <AnimatedBackground />
-    </div>
+    </>
   );
 }
 

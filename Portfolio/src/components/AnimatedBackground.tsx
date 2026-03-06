@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "../css/AnimatedBackground.css";
 
 const AnimatedBackground = () => {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -97,6 +98,10 @@ const AnimatedBackground = () => {
         <h1>Rayan Butt</h1>
         <h4 style={{ color: "red" }}>Full Stack Web Developer</h4>
       </div>
+      <h3 className="scroll-here">
+        About Me
+        <img src="../public/arrow.png" width="30" />
+      </h3>
     </header>
   );
 };
