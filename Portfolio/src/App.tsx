@@ -1,26 +1,14 @@
-import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const items = ["New York", "Paris", "London", "Brighton"];
   return (
-    /*<div>
-      <ListGroup items={items} heading="Cities" />
-      <Alert>
-        Hello<span> testing</span>
-      </Alert>
-      <Button
-        onClick={() => console.log("Button Pressed")}
-        buttonName="Press me"
-      />
-            
-    </div>*/
-
-    <>
+    <div className="pages">
       <Home />
-    </>
+      <Navbar navColor="#0000004d" />
+      <About />
+    </div>
   );
 }
 

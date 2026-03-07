@@ -96,7 +96,7 @@ h1{
 @keyframes fade-up {
   0% {
     opacity: 0;
-    transform: translateY(50px) scale(0.9);
+    transform: translateY(10px) scale(0.9);
   }
   100%{
     opacity: 1;
@@ -105,9 +105,12 @@ h1{
 }
 .scroll-here{
     position: absolute;
-    bottom: 90px;
+    bottom: 500px;
     left: 40%;
     opacity: 0;
-    animation: fade-up 2s ease 3s forwards;
+    animation: fade-up 1s ease 3s forwards;
+    border: 3px solid red;
+    padding: 10px 20px;
+    color: #f1f5f9;
 
 }

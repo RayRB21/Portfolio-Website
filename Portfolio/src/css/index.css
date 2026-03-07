@@ -1,0 +1,9 @@
+.pages{
+    background-color: #0b111f;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f5f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,21 +1,32 @@
-import "../css/Navbar.css";
+import "../css/navbar.css";
 
-function Navbar() {
+interface Props {
+  navColor?: string;
+}
+
+function Navbar({ navColor }: Props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark custom-navbar py-2">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark custom-navbar py-2 sticky-top"
+      style={{ backgroundColor: navColor }}
+    >
       <div className="container-fluid">
         <a
           className="navbar-brand logos"
           href="https://www.linkedin.com/in/rayan-butt-cs/"
         >
-          <img src="../public/LinkedIn.png.webp" alt="Bootstrap" width="40" />
+          <img
+            src="../public/logos/LinkedIn.png.webp"
+            alt="Linkedin"
+            width="40"
+          />
         </a>
         <a className="navbar-brand logos" href="https://github.com/RayRB21">
-          <img src="../public/github.webp" alt="Bootstrap" width="40" />
+          <img src="../public/logos/github.webp" alt="GitHub" width="40" />
         </a>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link fs-5" aria-current="page" href="#">
+            <a className="nav-link fs-5" aria-current="page" href="#about">
               About Me
             </a>
             <a className="nav-link fs-5" href="#">
@@ -24,7 +35,7 @@ function Navbar() {
             <a className="nav-link fs-5" href="#">
               Skills and Education
             </a>
-            <a className="nav-link fs-5" aria-disabled="true">
+            <a className="nav-link fs-5" href="#">
               Contact
             </a>
           </div>
