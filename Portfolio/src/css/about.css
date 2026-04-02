@@ -1,9 +1,12 @@
 .about-img {
     padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 300px;
+    width: 100%;
 }
 
 .about-desc {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: -300px;
+    padding-right: 0px;
     padding-top: 100px;
 }

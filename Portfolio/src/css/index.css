@@ -7,3 +7,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+.subtitle {
+  font-weight: 700;
+  border: 2px solid red;
+  margin-left: 20px;
+  margin-top:30px;
+  padding:30px;
+  display: inline-block;
+}

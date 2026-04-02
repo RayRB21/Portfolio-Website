@@ -114,3 +114,8 @@ h1{
     color: #f1f5f9;
 
 }
+
+.portfolio-link{
+    opacity: 0;
+    animation: fade-up 2s ease 4s forwards
+}

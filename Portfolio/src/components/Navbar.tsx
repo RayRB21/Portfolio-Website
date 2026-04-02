@@ -29,7 +29,7 @@ function Navbar({ navColor }: Props) {
             <a className="nav-link fs-5" aria-current="page" href="#about">
               About Me
             </a>
-            <a className="nav-link fs-5" href="#">
+            <a className="nav-link fs-5" href="#projects">
               Projects
             </a>
             <a className="nav-link fs-5" href="#">

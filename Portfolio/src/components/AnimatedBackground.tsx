@@ -96,7 +96,7 @@ const AnimatedBackground = () => {
       />
       <div className="page-title">
         <h1>Rayan Butt</h1>
-        <h4 style={{ color: "red" }}>Full Stack Web Developer</h4>
+        <h4 style={{ color: "red" }}>Full Stack Software Engineer</h4>
       </div>
       <a href="#about">
         <h3 className="scroll-here">
@@ -104,6 +104,16 @@ const AnimatedBackground = () => {
           <img src="../public/arrow.png" width="30" />
         </h3>
       </a>
+      <div className="container-fluid">
+        <div className="row min-vh-100">
+          <div className="col-6"></div>
+          <div className="portfolio-link col-6 d-flex justify-content-center align-items-center">
+            <a href="https://github.com/RayRB21/Portfolio-Website">
+              <img src="../public/Portfolio-link.png" />
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
