@@ -8,6 +8,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%); /* start off-screen from left */
+  animation: slideIn 1s forwards; /* 1s animation */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* move to original position */
+  }
+}
 .subtitle {
   font-weight: 700;
   border: 2px solid red;
@@ -15,4 +27,7 @@ html {
   margin-top:30px;
   padding:30px;
   display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%); /* start off-screen from left */
+  animation: slideIn 2s forwards;
 }

@@ -1,0 +1,47 @@
+.project-img {
+    max-width: 100%;
+    width : 100%;
+    z-index: 2;
+    position: relative;
+    transition: transform 0.8s ease;
+    display: inline-block;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.project-img:hover {
+    transform: translate(60px,-60px);
+}
+
+.img-wrapper:hover{
+    transform: translate(-5px,5px)
+}
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  transition: 0.8s ease;
+}
+
+
+.img-wrapper::before {
+  content: "";
+  top: -3px;
+  left: -3px;
+  position: absolute;
+  width: 101%;
+  height: 102%;
+  background-color: red;
+  z-index: 1;
+}
+
+.link-button {
+    color: white;
+    border-bottom: 2px solid red;
+    padding: 5px;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.link-button:hover {
+    background-color:red
+}
