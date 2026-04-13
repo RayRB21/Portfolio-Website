@@ -1,8 +1,16 @@
 import "../css/about.css";
+import { useInView } from "../components/ScrollAnimation";
 
 function About() {
+  const { ref, isVisible } = useInView(0.5);
+
   return (
-    <div id="about">
+    <div
+      id="about"
+      ref={ref}
+      className={`animate-on-scroll ${isVisible ? "animate" : ""} `}
+      style={{ marginTop: "1vh" }}
+    >
       <h1 className="subtitle">About me </h1>
       <div className="container">
         <div className="row align-items-center">

@@ -5,7 +5,6 @@
     position: relative;
     transition: transform 0.8s ease;
     display: inline-block;
-    border: 1px solid rgb(190, 190, 190);
 }
 
 .project-img:hover {
@@ -44,4 +43,10 @@
 
 .link-button:hover {
     background-color:red
+}
+
+.project-title{
+    color: white;
+    margin-top: "-10%";
+    text-decoration: underline red 2px;
 }

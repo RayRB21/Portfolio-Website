@@ -22,12 +22,25 @@ html {
 }
 .subtitle {
   font-weight: 700;
-  border: 2px solid red;
-  margin-left: 20px;
-  margin-top:30px;
-  padding:30px;
+  font-size: 350%;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  margin-left: 10%;
+  margin-top:10vh;
+  padding:2vh;
   display: inline-block;
-  opacity: 0;
-  transform: translateX(-100%); /* start off-screen from left */
-  animation: slideIn 2s forwards;
+  /*transform: translateX(-100%);
+  animation: slideIn 2s forwards; */
+}
+
+.animate-on-scroll {
+	opacity: 0;
+	transform: translate(-300px, 0);
+	transition: all 0.4s ease-out;
+	transition-delay: 0.2s;
+}
+
+.animate {
+	opacity: 1;
+	transform: translate(0, 0);
 }
