@@ -2,6 +2,7 @@
     max-width: 100%;
     width : 100%;
     z-index: 2;
+    margin-left: 5vh;
     position: relative;
     transition: transform 0.8s ease;
     display: inline-block;
@@ -30,6 +31,7 @@
   width: 101%;
   height: 102%;
   background-color: red;
+  margin-left: 5vh;
   z-index: 1;
 }
 

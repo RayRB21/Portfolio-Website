@@ -12,7 +12,11 @@ function About() {
       style={{ marginTop: "1vh" }}
     >
       <h1 className="subtitle">About me </h1>
-      <div className="container">
+      <div
+        className={`container content animate-on-scroll ${
+          isVisible ? "animate" : ""
+        }`}
+      >
         <div className="row align-items-center">
           {/* Left side (text) */}
           <div className="col-md-6">

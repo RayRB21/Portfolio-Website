@@ -9,10 +9,10 @@ const AnimatedBackground = () => {
     if (!header) return;
 
     const backgrounds = [
-      "rgba(127, 29, 29, 0.1)",
-      "rgba(153, 27, 27, 0.1)",
-      "rgba(185, 28, 28, 0.1)",
-      "rgba(248, 113, 113, 0.1)",
+      "rgba(127, 29, 29, 0.05)",
+      "rgba(153, 27, 27, 0.05)",
+      "rgba(185, 28, 28, 0.05)",
+      "rgba(248, 113, 113, 0.05)",
     ];
     const largeNums = [60, 90, 120, 150];
     const smallNums = [3, 4, 5, 6];
