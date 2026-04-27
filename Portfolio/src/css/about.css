@@ -11,3 +11,30 @@
     padding-top: 100px;
 }
 
+.icon {
+    width:90%; 
+    height: auto;
+    padding: 1.5vh;
+    border-style: solid;
+    border-color: red;
+    border-radius: 30px;
+    min-width: 100px;
+}
+
+
+.icon-animation {
+	opacity: 0;
+	transform: translate(0, 50px);
+	transition: all 0.3s ease-out;
+	transition-delay: 0.3s;
+}
+
+.icon:hover {
+    transition-delay:0.1s;
+    background-color: rgb(199, 3, 3)
+}
+
+.about-text {
+    font-size: 30px;
+    font-size: 1.3vw;
+}

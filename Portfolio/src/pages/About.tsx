@@ -17,15 +17,17 @@ function About() {
           isVisible ? "animate" : ""
         }`}
       >
-        <div className="row align-items-center">
+        <div className="row">
           {/* Left side (text) */}
           <div className="col-md-6">
-            <img
-              src="../public/about.png"
-              className="dflex justify-content-centre"
-              alt="About"
-            />
-            <h4 className="text-center">
+            <div className="text-center">
+              <img
+                style={{ width: "30%", height: "auto", marginTop: "6vh" }}
+                src="../public/profile_pic.png"
+                alt="About"
+              />
+            </div>
+            <h4 className="text-center about-text" style={{ marginTop: "6vh" }}>
               Studied Computer Science at the University of York specialising in
               AI, computer vision, and full-stack development. Experienced in
               Deployment, Testing and Databases with projects in image
@@ -39,10 +41,95 @@ function About() {
 
           {/* Right side (image) */}
           <div className="col-md-6">
-            <img
-              src="../public/logos/java_logo.png"
-              className="dflex justify-content-centre"
-            />
+            <div className="row">
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/java_logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/javascript-logo.webp"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/Python-logo.svg.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/React-icon.svg.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/sql-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/Typescript_logo.svg.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/git-logo.webp"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/Go-Logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/Postgresql-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ marginTop: "2vh" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
