@@ -1,0 +1,23 @@
+.contact-icon {
+    width: 25%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.contact-icon:hover{
+    scale: 0.9;
+}
+
+.contact-text{
+    margin-left: 1vw;
+    font-size:1.2vw;
+    font-weight: 500;
+    color: white;
+    border-bottom:2px solid red;
+    transition: 0.5s ease;
+    text-decoration-line: none;
+}
+
+.contact-text:hover{
+    background-color: red;
+}

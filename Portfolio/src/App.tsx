@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar navColor="#0000004d" />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }

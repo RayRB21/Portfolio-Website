@@ -2,7 +2,7 @@ import "../css/about.css";
 import { useInView } from "../components/ScrollAnimation";
 
 function About() {
-  const { ref, isVisible } = useInView(0.5);
+  const { ref, isVisible } = useInView(0.2);
 
   return (
     <div
@@ -13,9 +13,8 @@ function About() {
     >
       <h1 className="subtitle">About me </h1>
       <div
-        className={`container content animate-on-scroll ${
-          isVisible ? "animate" : ""
-        }`}
+        className={`container icon-animation ${isVisible ? "animate" : ""}`}
+        style={{ transitionDelay: "0.3s" }}
       >
         <div className="row">
           {/* Left side (text) */}

@@ -35,7 +35,7 @@ function Navbar({ navColor }: Props) {
             <a className="nav-link fs-5" href="#">
               Skills and Education
             </a>
-            <a className="nav-link fs-5" href="#">
+            <a className="nav-link fs-5" href="#contact">
               Contact
             </a>
           </div>
