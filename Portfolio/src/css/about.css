@@ -30,7 +30,7 @@
 }
 
 .icon:hover {
-    transition-delay:0.1s;
+    transition-delay:0.05s;
     background-color: rgb(199, 3, 3)
 }
 
@@ -38,4 +38,15 @@
     font-size: 30px;
     font-size: 1.3vw;
     font-weight: 400;
+}
+
+.github-link-icon{
+    width:60%;
+    height: auto;
+    margin-top:5vh;
+    transition: 0.3s ease;
+}
+
+.github-link-icon:hover{
+    scale:0.9;
 }

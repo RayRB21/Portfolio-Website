@@ -36,9 +36,18 @@ function About() {
               projects and learn new skills. Always ready to take charge and
               tackle problems with unique and tailored approaches.
             </h4>
+            <div className="text-center">
+              <a href="https://github.com/RayRB21">
+                <img
+                  className="github-link-icon "
+                  src="../public/logos/github.webp"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Right side (image) */}
+
           <div className="col-md-6">
             <div className="row">
               <div className="col-md-3"></div>
@@ -48,7 +57,7 @@ function About() {
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(9vh)" }}
                 />
               </div>
               <div className="col-md-3">
@@ -65,7 +74,19 @@ function About() {
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(9vh)" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-6"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/logos/Typescript_logo.svg.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
                 />
               </div>
             </div>
@@ -78,7 +99,7 @@ function About() {
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(-5vh)" }}
                 />
               </div>
               <div className="col-md-3">
@@ -91,11 +112,11 @@ function About() {
               </div>
               <div className="col-md-3">
                 <img
-                  src="../public/logos/Typescript_logo.svg.png"
+                  src="../public/C++_Logo.png"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(-5vh)" }}
                 />
               </div>
             </div>
@@ -108,7 +129,7 @@ function About() {
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(9vh)" }}
                 />
               </div>
               <div className="col-md-3">
@@ -125,14 +146,56 @@ function About() {
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
-                  style={{ marginTop: "2vh" }}
+                  style={{ transform: "translateY(9vh)" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-6"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/github-actions-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="../public/PyTorch_logo_icon.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(-5vh)" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/nodejs_logo.webp"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(3vh)" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="../public/flask-logo.webp"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(-5vh)" }}
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="container d-flex justify-content-center"></div>
     </div>
   );
 }

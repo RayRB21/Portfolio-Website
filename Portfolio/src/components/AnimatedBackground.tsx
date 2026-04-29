@@ -108,8 +108,8 @@ const AnimatedBackground = () => {
         <div className="row min-vh-100">
           <div className="col-6"></div>
           <div className="portfolio-link col-6 d-flex justify-content-center align-items-center">
-            <a href="https://github.com/RayRB21/Portfolio-Website">
-              <img src="../public/Portfolio-link.png" />
+            <a href="../public/Rayan_Butt_CV-Anaplan.pdf">
+              <img className="cv-icon" src="../public/cv-icon.png" />
             </a>
           </div>
         </div>

@@ -5,14 +5,16 @@ function Contact() {
   const { ref, isVisible } = useInView(0.2);
 
   return (
-    <div
-      id="contact"
-      ref={ref}
-      className={`animate-on-scroll ${isVisible ? "animate" : ""} `}
-      style={{ marginTop: "1vh" }}
-    >
-      <h1 className="subtitle">Contact</h1>
-      <div className="container" style={{ marginTop: "6vh" }}>
+    <div id="contact" ref={ref} style={{ marginTop: "1vh" }}>
+      <h1
+        className={`subtitle animate-on-scroll ${isVisible ? "animate" : ""} `}
+      >
+        Contact
+      </h1>
+      <div
+        className={`container content animate-on-scroll${isVisible ? "animate" : ""} `}
+        style={{ marginTop: "6vh" }}
+      >
         <div className="row">
           <div className="col-md-4">
             <a href="mailto:rayrb2001@gmail.com">
@@ -23,7 +25,7 @@ function Contact() {
               />
             </a>
             <a href="mailto:rayrb2001@gmail.com" className="contact-text">
-              rayrb2001@gmail.com
+              RayRB2001@gmail.com
             </a>
           </div>
 
