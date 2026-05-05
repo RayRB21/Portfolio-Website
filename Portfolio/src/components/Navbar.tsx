@@ -1,4 +1,4 @@
-import "../css/navbar.css";
+import "../css/Navbar.css";
 
 interface Props {
   navColor?: string;
