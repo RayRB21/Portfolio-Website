@@ -15,14 +15,10 @@ function Navbar({ navColor }: Props) {
           className="navbar-brand logos"
           href="https://www.linkedin.com/in/rayan-butt-cs/"
         >
-          <img
-            src="../public/logos/LinkedIn.png.webp"
-            alt="Linkedin"
-            width="40"
-          />
+          <img src="/logos/LinkedIn.png.webp" alt="Linkedin" width="40" />
         </a>
         <a className="navbar-brand logos" href="https://github.com/RayRB21">
-          <img src="../public/logos/github.webp" alt="GitHub" width="40" />
+          <img src="/logos/github.webp" alt="GitHub" width="40" />
         </a>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">

@@ -20,7 +20,7 @@ function Contact() {
             <a href="mailto:rayrb2001@gmail.com">
               <img
                 alt="rayrb2001@gmail.com"
-                src="../public/mail-icon.png"
+                src="/mail-icon.png"
                 className="contact-icon"
               />
             </a>
@@ -33,7 +33,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/rayan-butt-cs/">
               <img
                 alt="linkedin"
-                src="../public/linkedin-circle.webp"
+                src="/linkedin-circle.webp"
                 className="contact-icon"
               />
             </a>
@@ -48,7 +48,7 @@ function Contact() {
           <div className="col-md-4">
             <img
               alt="phone number"
-              src="../public/Phone_icon.png"
+              src="/Phone_icon.png"
               className="contact-icon"
             />
             <a className="contact-text">07824466675</a>

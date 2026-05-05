@@ -101,15 +101,15 @@ const AnimatedBackground = () => {
       <a href="#about">
         <h3 className="scroll-here">
           About Me
-          <img src="../public/arrow.png" width="30" />
+          <img src="/arrow.png" width="30" />
         </h3>
       </a>
       <div className="container-fluid">
         <div className="row min-vh-100">
           <div className="col-6"></div>
           <div className="portfolio-link col-6 d-flex justify-content-center align-items-center">
-            <a href="../public/Rayan_Butt_CV-Anaplan.pdf">
-              <img className="cv-icon" src="../public/cv-icon.png" />
+            <a href="/Rayan-Butt-CV.pdf">
+              <img className="cv-icon" src="/cv-icon.png" />
             </a>
           </div>
         </div>

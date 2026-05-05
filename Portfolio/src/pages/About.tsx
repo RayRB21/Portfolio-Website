@@ -22,7 +22,7 @@ function About() {
             <div className="text-center">
               <img
                 style={{ width: "30%", height: "auto", marginTop: "6vh" }}
-                src="../public/profile_pic.png"
+                src="/profile_pic.png"
                 alt="About"
               />
             </div>
@@ -38,10 +38,7 @@ function About() {
             </h4>
             <div className="text-center">
               <a href="https://github.com/RayRB21">
-                <img
-                  className="github-link-icon "
-                  src="../public/logos/github.webp"
-                />
+                <img className="github-link-icon " src="/logos/github.webp" />
               </a>
             </div>
           </div>
@@ -53,7 +50,7 @@ function About() {
               <div className="col-md-3"></div>
               <div className="col-md-3">
                 <img
-                  src="../public/logos/java_logo.png"
+                  src="/logos/java_logo.png"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -62,7 +59,7 @@ function About() {
               </div>
               <div className="col-md-3">
                 <img
-                  src="../public/logos/javascript-logo.webp"
+                  src="/logos/javascript-logo.webp"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -70,79 +67,7 @@ function About() {
               </div>
               <div className="col-md-3">
                 <img
-                  src="../public/logos/Python-logo.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-6"></div>
-              <div className="col-md-3">
-                <img
-                  src="../public/logos/Typescript_logo.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="../public/logos/React-icon.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="../public/sql-logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="../public/C++_Logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="../public/git-logo.webp"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="../public/Go-Logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="../public/Postgresql-logo.png"
+                  src="/logos/Python-logo.svg.png"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -155,7 +80,7 @@ function About() {
               <div className="col-md-6"></div>
               <div className="col-md-3">
                 <img
-                  src="../public/github-actions-logo.png"
+                  src="/logos/Typescript_logo.svg.png"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -167,7 +92,7 @@ function About() {
               <div className="col-md-3"></div>
               <div className="col-md-3">
                 <img
-                  src="../public/PyTorch_logo_icon.png"
+                  src="/logos/React-icon.svg.png"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -176,7 +101,79 @@ function About() {
               </div>
               <div className="col-md-3">
                 <img
-                  src="../public/nodejs_logo.webp"
+                  src="/sql-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="/C++_Logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(-5vh)" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="/git-logo.webp"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(9vh)" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="/Go-Logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="/Postgresql-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(9vh)" }}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-6"></div>
+              <div className="col-md-3">
+                <img
+                  src="/github-actions-logo.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                />
+              </div>
+            </div>
+
+            <div className="row" style={{ marginTop: "4vh" }}>
+              <div className="col-md-3"></div>
+              <div className="col-md-3">
+                <img
+                  src="/PyTorch_logo_icon.png"
+                  className={`icon icon-animation ${
+                    isVisible ? "animate" : ""
+                  }`}
+                  style={{ transform: "translateY(-5vh)" }}
+                />
+              </div>
+              <div className="col-md-3">
+                <img
+                  src="/nodejs_logo.webp"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
@@ -185,7 +182,7 @@ function About() {
               </div>
               <div className="col-md-3">
                 <img
-                  src="../public/flask-logo.webp"
+                  src="/flask-logo.webp"
                   className={`icon icon-animation ${
                     isVisible ? "animate" : ""
                   }`}
