@@ -7,14 +7,14 @@
 
 .slide-in {
   opacity: 0;
-  transform: translateX(-100%); /* start off-screen from left */
-  animation: slideIn 1s forwards; /* 1s animation */
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
 }
 
 @keyframes slideIn {
   to {
     opacity: 1;
-    transform: translateX(0); /* move to original position */
+    transform: translateX(0);
   }
 }
 
@@ -34,8 +34,8 @@ header {
 
 .page-title {
     opacity: 0;
-    transform: translateX(-100%); /* start off-screen from left */
-    animation: slideIn 3s forwards; /* 1s animation */
+    transform: translateX(-100%);
+    animation: slideIn 3s forwards;
     position: absolute; 
     top: 30%; 
     left: 30%; 
@@ -48,7 +48,7 @@ header {
 @keyframes page-title {
   to {
     opacity: 1;
-    transform: translateX(0); /* move to original position */
+    transform: translateX(0); 
   }
 }
 

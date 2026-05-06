@@ -25,13 +25,14 @@
 .icon-animation {
 	opacity: 0;
 	transform: translate(0, 50px);
-	transition: all 0.3s ease-out;
-	transition-delay: 0.4s;
+	transition: all 0.5s ease-out;
+	transition-delay: 0.1s;
 }
 
 .icon:hover {
     transition-delay:0.05s;
-    background-color: rgb(199, 3, 3)
+    background-color: rgb(199, 3, 3);
+    transition-duration: 0.1s;
 }
 
 .about-text {

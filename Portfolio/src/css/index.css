@@ -12,14 +12,14 @@ html {
 
 .slide-in {
   opacity: 0;
-  transform: translateX(-100%); /* start off-screen from left */
-  animation: slideIn 1s forwards; /* 1s animation */
+  transform: translateX(-100%); 
+  animation: slideIn 1s forwards;
 }
 
 @keyframes slideIn {
   to {
     opacity: 1;
-    transform: translateX(0); /* move to original position */
+    transform: translateX(0);
   }
 }
 .subtitle {
@@ -31,8 +31,6 @@ html {
   margin-top:10vh;
   padding:2vh;
   display: inline-block;
-  /*transform: translateX(-100%);
-  animation: slideIn 2s forwards; */
 }
 
 .animate-on-scroll {
