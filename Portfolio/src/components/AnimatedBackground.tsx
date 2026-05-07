@@ -9,10 +9,10 @@ const AnimatedBackground = () => {
     if (!header) return;
 
     const backgrounds = [
-      "rgba(127, 29, 29, 0.05)",
-      "rgba(153, 27, 27, 0.05)",
-      "rgba(185, 28, 28, 0.05)",
-      "rgba(248, 113, 113, 0.05)",
+      "rgba(255, 0, 0, 0.05)",
+      "rgba(0, 110, 255, 0.05)",
+      "rgba(240, 0, 200, 0.05)",
+      "rgba(255, 230, 0, 0.05)",
     ];
     const largeNums = [60, 90, 120, 150];
     const smallNums = [3, 4, 5, 6];
@@ -71,8 +71,8 @@ const AnimatedBackground = () => {
       }
 
       if (
-        Math.abs(coordinates.x - e.clientX) > 150 ||
-        Math.abs(coordinates.y - e.clientY) > 150
+        Math.abs(coordinates.x - e.clientX) > 300 ||
+        Math.abs(coordinates.y - e.clientY) > 300
       ) {
         coordinates.x = e.clientX;
         coordinates.y = e.clientY;
@@ -94,24 +94,27 @@ const AnimatedBackground = () => {
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
         rel="stylesheet"
       />
-      <div className="page-title">
-        <h1>Rayan Butt</h1>
-        <h4 style={{ color: "red" }}>Full Stack Software Engineer</h4>
-      </div>
-      <a href="#about">
-        <h3 className="scroll-here">
-          About Me
-          <img src="/arrow.png" width="30" />
-        </h3>
-      </a>
-      <div className="container-fluid">
-        <div className="row min-vh-100">
-          <div className="col-6"></div>
-          <div className="portfolio-link col-6 d-flex justify-content-center align-items-center">
-            <a href="/Rayan-Butt-CV.pdf">
-              <img className="cv-icon" src="/cv-icon.png" />
-            </a>
+      <div className="container">
+        <div className="row" style={{ marginTop: "20%" }}>
+          <div className="col-md-3"></div>
+          <div className="col-md-7">
+            <div className="page-title">
+              <h1>Rayan Butt</h1>
+              <h4 style={{ color: "red" }}>Full Stack Software Engineer</h4>
+            </div>
           </div>
+        </div>
+      </div>
+      <div className="row" style={{ marginTop: "2vh" }}>
+        <div className="col-md-6">
+          <a href="/Rayan-Butt-CV.pdf" className="d-flex justify-content-end">
+            <h5 className="cv-link text-center">Download CV</h5>
+          </a>
+        </div>
+        <div className="col-md-6">
+          <a href="mailto:rayrb2001@gmail.com">
+            <h5 className="cv-link text-center">Contact Me</h5>
+          </a>
         </div>
       </div>
     </header>

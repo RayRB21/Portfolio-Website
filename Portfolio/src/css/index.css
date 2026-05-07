@@ -1,8 +1,6 @@
 .pages{
-background-color: #0b0e16;
-opacity: 1;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #0b0e16 40px ), repeating-linear-gradient( #00000055, #000000 );
-color: #f1f5f9;
+background-color: #ffffff;
+color: #000000;
     
 }
 
@@ -23,11 +21,10 @@ html {
   }
 }
 .subtitle {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 350%;
-  border-top: 5px solid red;
-  border-bottom: 5px solid red;
-  margin-left: 10%;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
   margin-top:10vh;
   padding:2vh;
   display: inline-block;

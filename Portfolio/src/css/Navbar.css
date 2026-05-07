@@ -1,5 +1,9 @@
 .custom-navbar {
-  background-color: #220709; 
+  background-color: #ffffff; 
+  max-width: 500px;
+  border-radius: 30px;
+  border: 1px solid rgba(124, 122, 122, 0.603);
+  top: 10px;
 }
 
 @keyframes fade-down {
@@ -15,4 +19,14 @@
 
 .logos {
   animation: fade-down 0.5s;
+}
+
+.nav-link{
+  color: black;
+  font-size:medium;
+  font-weight: 200;
+}
+
+.nav-link:hover{
+  color: rgb(65, 63, 63)
 }

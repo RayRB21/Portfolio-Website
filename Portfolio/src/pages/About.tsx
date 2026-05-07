@@ -3,6 +3,16 @@ import { useInView } from "../components/ScrollAnimation";
 
 function About() {
   const { ref, isVisible } = useInView(0.2);
+  const skills = [
+    { name: "Python", img: "/logos/Python-logo.svg.png" },
+    { name: "JavaScript", img: "/logos/javascript-logo.webp" },
+    { name: "TypeScript", img: "/Typescript_logo.svg.png" },
+    { name: "PostgreSQL", img: "/Postgresql-logo.png" },
+    { name: "React", img: "/logos/React-icon.svg.png" },
+    { name: "Flask", img: "/flask-logo.webp" },
+    { name: "Go", img: "/Go-Logo.png" },
+    { name: "Java", img: "/logos/java_logo.png" },
+  ];
 
   return (
     <div
@@ -11,21 +21,17 @@ function About() {
       className={`animate-on-scroll ${isVisible ? "animate" : ""} `}
       style={{ marginTop: "1vh" }}
     >
-      <h1 className="subtitle">About me </h1>
+      <div className="container text-center">
+        <h1 className="subtitle ">About Me </h1>
+      </div>
+
       <div
         className={`container icon-animation ${isVisible ? "animate" : ""}`}
         style={{ transitionDelay: "0.3s" }}
       >
         <div className="row">
-          {/* Left side (text) */}
+          <div className="col-md-3"></div>
           <div className="col-md-6">
-            <div className="text-center">
-              <img
-                style={{ width: "30%", height: "auto", marginTop: "6vh" }}
-                src="/profile_pic.png"
-                alt="About"
-              />
-            </div>
             <h4 className="text-center about-text" style={{ marginTop: "6vh" }}>
               Studied Computer Science at the University of York specialising in
               AI, computer vision, and full-stack development. Experienced in
@@ -36,160 +42,23 @@ function About() {
               projects and learn new skills. Always ready to take charge and
               tackle problems with unique and tailored approaches.
             </h4>
-            <div className="text-center">
-              <a href="https://github.com/RayRB21">
-                <img className="github-link-icon " src="/logos/github.webp" />
-              </a>
-            </div>
           </div>
+        </div>
 
-          {/* Right side (image) */}
-
-          <div className="col-md-6">
-            <div className="row">
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="/logos/java_logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
+        <div className="container" style={{ marginTop: "4vh" }}>
+          <div className="row">
+            {skills.map((skill) => (
+              <div
+                className="col-md-3"
+                key={skill.name}
+                style={{ marginBottom: "2vh" }}
+              >
+                <div className="icon-box text-center ">
+                  <h4 className="icon-text">{skill.name}</h4>
+                  <img className="icon" src={skill.img} />
+                </div>
               </div>
-              <div className="col-md-3">
-                <img
-                  src="/logos/javascript-logo.webp"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/logos/Python-logo.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-6"></div>
-              <div className="col-md-3">
-                <img
-                  src="/logos/Typescript_logo.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="/logos/React-icon.svg.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/sql-logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/C++_Logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="/git-logo.webp"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/Go-Logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/Postgresql-logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(9vh)" }}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-6"></div>
-              <div className="col-md-3">
-                <img
-                  src="/github-actions-logo.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                />
-              </div>
-            </div>
-
-            <div className="row" style={{ marginTop: "4vh" }}>
-              <div className="col-md-3"></div>
-              <div className="col-md-3">
-                <img
-                  src="/PyTorch_logo_icon.png"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/nodejs_logo.webp"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(3vh)" }}
-                />
-              </div>
-              <div className="col-md-3">
-                <img
-                  src="/flask-logo.webp"
-                  className={`icon icon-animation ${
-                    isVisible ? "animate" : ""
-                  }`}
-                  style={{ transform: "translateY(-5vh)" }}
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

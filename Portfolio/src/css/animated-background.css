@@ -29,21 +29,19 @@ header {
     height: 100vh; 
     position: relative; 
     overflow: hidden; 
-    background-color: #0b0e16;
+    background-color: #ffffff;
 }
 
 .page-title {
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 3s forwards;
-    position: absolute; 
-    top: 30%; 
-    left: 30%; 
+
     transform: translate(-50%, -50%);
     z-index: 1; 
 
     font-family: 'Montserrat', sans-serif;
-    color: #f1f5f9;
+    color: #000000;
 }
 @keyframes page-title {
   to {
@@ -103,19 +101,22 @@ h1{
     transform: translateY(0px) scale(1);
   }
 }
-.scroll-here{
+.cv-link{
+    box-sizing: border-box;
     position: absolute;
-    bottom: 35vh;
-    left: 40%;
     opacity: 0;
     animation: fade-up 1s ease 3s forwards;
     border: 3px solid red;
-    padding: 10px 20px;
-    color: #f1f5f9;
+    padding:1vh;
+    color: #000000;
     transition: 0.3s ease;
+    width: 10%;
+    min-width: 150px;
+    font-weight:200;
+    border-radius: 10px;
 }
 
-.scroll-here:hover{
+.cv-link:hover{
     background-color: red;
 }
 

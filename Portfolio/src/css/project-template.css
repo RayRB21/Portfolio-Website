@@ -6,6 +6,8 @@
     position: relative;
     transition: transform 0.8s ease;
     display: inline-block;
+    border-radius: 20px;
+    border: solid 2px rgb(0, 0, 0)
 }
 
 .project-img:hover {
@@ -25,18 +27,17 @@
 
 .img-wrapper::before {
   content: "";
-  top: -3px;
-  left: -3px;
   position: absolute;
-  width: 101%;
-  height: 102%;
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.774);
   margin-left: 5vh;
   z-index: 1;
+      border-radius: 20px;
 }
 
 .link-button {
-    color: white;
+    color: rgb(0, 0, 0);
     border-bottom: 2px solid red;
     padding: 5px;
     position: absolute;
@@ -48,7 +49,7 @@
 }
 
 .project-title{
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: "-10%";
     text-decoration: underline red 2px;
 }

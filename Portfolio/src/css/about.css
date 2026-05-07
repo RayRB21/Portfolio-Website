@@ -10,17 +10,60 @@
     padding-right: 0px;
     padding-top: 100px;
 }
-
-.icon {
-    width:90%; 
-    height: auto;
-    padding: 1.5vh;
-    border-style: solid;
-    border-color: red;
-    border-radius: 30px;
-    min-width: 100px;
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.icon-box{
+    width:95%; 
+    aspect-ratio: 1 / 0.65;
+    border-style: solid;
+    border: 1px dotted rgb(255, 0, 0);
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease;
+    position: relative;
+}
+
+.hover-circle{
+    aspect-ratio: 1 / 0.65;
+    width: 90%;
+    margin: 5%;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+
+
+.icon-box:hover{
+}
+
+.icon-box:hover .icon{
+    filter: brightness(1);
+}
+
+.icon-box:hover .icon-text{
+    scale: 1.1;
+    transform: translateY(70%)
+}
+
+.icon {
+    width:10%; 
+    height: auto;
+    filter:brightness(0);
+    transform: translateY(140%);
+    transition: 0.3s ease;
+}
+
+.icon-text {
+    font-weight:700;
+    font-size:250%;
+    transform: translateY(80%);
+    transition: 0.6s ease;
+}
 
 .icon-animation {
 	opacity: 0;
@@ -29,16 +72,10 @@
 	transition-delay: 0.1s;
 }
 
-.icon:hover {
-    transition-delay:0.05s;
-    background-color: rgb(199, 3, 3);
-    transition-duration: 0.1s;
-}
-
 .about-text {
-    font-size: 30px;
-    font-size: 1.3vw;
-    font-weight: 400;
+    font-size: 20px;
+    font-size: clamp(16px, 2vh, 32px);;
+    font-weight: 200;
 }
 
 .github-link-icon{
