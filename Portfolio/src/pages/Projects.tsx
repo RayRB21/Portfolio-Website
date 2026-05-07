@@ -6,12 +6,14 @@ function Projects() {
 
   return (
     <div id="projects" style={{ marginTop: "5vh" }}>
-      <h1
-        ref={ref}
-        className={`subtitle animate-on-scroll ${isVisible ? "animate" : ""} `}
-      >
-        Projects
-      </h1>
+      <div className="container text-center">
+        <h1
+          ref={ref}
+          className={`subtitle animate-on-scroll ${isVisible ? "animate" : ""} `}
+        >
+          Projects
+        </h1>
+      </div>
       <div
         className={`content animate-on-scroll ${isVisible ? "animate" : ""}`}
       >

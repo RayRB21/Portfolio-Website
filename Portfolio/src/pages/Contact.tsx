@@ -6,11 +6,13 @@ function Contact() {
 
   return (
     <div id="contact" ref={ref} style={{ marginTop: "1vh" }}>
-      <h1
-        className={`subtitle animate-on-scroll ${isVisible ? "animate" : ""} `}
-      >
-        Contact
-      </h1>
+      <div className="container text-center">
+        <h1
+          className={`subtitle animate-on-scroll ${isVisible ? "animate" : ""} `}
+        >
+          Contact
+        </h1>
+      </div>
       <div
         className={`container content animate-on-scroll${isVisible ? "animate" : ""} `}
         style={{ marginTop: "6vh" }}
