@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../css/animated-background.css";
+import Coin from "./Coin";
 
 const AnimatedBackground = () => {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -71,8 +72,8 @@ const AnimatedBackground = () => {
       }
 
       if (
-        Math.abs(coordinates.x - e.clientX) > 300 ||
-        Math.abs(coordinates.y - e.clientY) > 300
+        Math.abs(coordinates.x - e.clientX) > 200 ||
+        Math.abs(coordinates.y - e.clientY) > 100
       ) {
         coordinates.x = e.clientX;
         coordinates.y = e.clientY;
@@ -94,13 +95,18 @@ const AnimatedBackground = () => {
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
         rel="stylesheet"
       />
+      {/*<Coin style={{ top: "30vw", left: "180vh" }} /> */}
       <div className="container">
         <div className="row" style={{ marginTop: "20%" }}>
           <div className="col-md-3"></div>
           <div className="col-md-7">
             <div className="page-title">
-              <h1>Rayan Butt</h1>
-              <h4 style={{ color: "red" }}>Full Stack Software Engineer</h4>
+              <span>Rayan Butt</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <span className="typewriter" style={{ color: "red" }}>
+                Full Stack Software Engineer
+              </span>
             </div>
           </div>
         </div>
@@ -108,12 +114,16 @@ const AnimatedBackground = () => {
       <div className="row" style={{ marginTop: "2vh" }}>
         <div className="col-md-6">
           <a href="/Rayan-Butt-CV.pdf" className="d-flex justify-content-end">
-            <h5 className="cv-link text-center">Download CV</h5>
+            <h5 className="cv-link d-flex align-items-center justify-content-center">
+              Download CV
+            </h5>
           </a>
         </div>
         <div className="col-md-6">
-          <a href="mailto:rayrb2001@gmail.com">
-            <h5 className="cv-link text-center">Contact Me</h5>
+          <a href="#contact">
+            <h5 className="cv-link d-flex align-items-center justify-content-center">
+              Contact Me
+            </h5>
           </a>
         </div>
       </div>

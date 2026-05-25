@@ -32,7 +32,9 @@ function ProjectTemplate({
 
         <div className="col-md-4" style={{ zIndex: 3 }}>
           <h2 className="project-title">{projectName}</h2>
-          <p style={{ marginTop: "5%" }}>{projectDesc}</p>
+          <p style={{ marginTop: "5%" }} className="project-desc">
+            {projectDesc}
+          </p>
           <div className="row" style={{ marginTop: "5%" }}>
             <div className="col-md-3"></div>
             <div className="col-md-3">

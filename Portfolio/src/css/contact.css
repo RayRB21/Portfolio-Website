@@ -20,3 +20,13 @@
 .contact-text:hover{
     border-bottom:2px solid red;
 }
+
+.social-icon{
+    width:50%;
+    filter: grayscale(0.3);
+    transition: 1s ease;
+}
+
+.social-icon:hover{
+    filter: grayscale(0);
+}

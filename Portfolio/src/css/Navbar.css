@@ -17,16 +17,25 @@
   }
 }
 
-.logos {
-  animation: fade-down 0.5s;
-}
+
 
 .nav-link{
   color: black;
   font-size:medium;
-  font-weight: 200;
+  font-weight: 400;
 }
 
+.nav-logo {
+  width: 13px;
+  height: auto;
+  margin-right: 3px;
+
+}
+.nav-link:focus,
+.nav-link:active,
+.nav-link.active{
+    color: rgb(0, 0, 0) !important
+}
 .nav-link:hover{
   color: rgb(65, 63, 63)
 }

@@ -15,14 +15,29 @@ function Navbar({ navColor }: Props) {
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav">
-          <a className="nav-link" aria-current="page" href="#about">
-            About Me
+          <a
+            className="nav-link align-items-center d-flex"
+            href="https://github.com/RayRB21"
+          >
+            <img src="/logos/github.webp" className="nav-logo d-inline-block" />
+            GitHub
           </a>
-          <a className="nav-link" href="#projects">
-            Projects
+          <a
+            className="nav-link align-items-center d-flex"
+            href="https://www.linkedin.com/in/rayan-butt-cs/"
+          >
+            <img
+              src="/logos/LinkedIn.png.webp"
+              className="nav-logo d-inline-block"
+            />
+            Linkedin
           </a>
-          <a className="nav-link" href="#contact">
-            Social
+          <a className="nav-link align-items-center d-flex" href="#contact">
+            <img
+              src="/Gmail_icon.svg.png"
+              className="nav-logo d-inline-block"
+            />
+            Gmail
           </a>
         </div>
       </div>

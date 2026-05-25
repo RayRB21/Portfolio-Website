@@ -1,5 +1,6 @@
 import "../css/about.css";
 import { useInView } from "../components/ScrollAnimation";
+import Coin from "../components/Coin";
 
 function About() {
   const { ref, isVisible } = useInView(0.2);
@@ -21,6 +22,8 @@ function About() {
       className={`animate-on-scroll ${isVisible ? "animate" : ""} `}
       style={{ marginTop: "1vh" }}
     >
+      {/*<Coin style={{ top: "20vh", left: "30vh" }} />
+      <Coin style={{ top: "50vw", left: "180vh" }} /> */}
       <div className="container text-center">
         <h1 className="subtitle ">About Me </h1>
       </div>

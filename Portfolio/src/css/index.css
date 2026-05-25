@@ -47,3 +47,33 @@ html {
   transition-delay:0.5s;
   transition: all 0.6s ease-out
 }
+
+
+
+
+/*
+.coin {
+  position:absolute;
+  width: 2vh;
+  height:auto;
+  animation: flashing .75s ease infinite;
+  transition: transform 0.1s ease;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.coin:hover{
+  animation: bounce .75s ease infinite !important;
+}
+
+@keyframes flashing{
+  0%, 100%{filter:brightness(1)}
+  50% {filter:brightness(0.8)}
+
+}
+
+@keyframes bounce{
+  0%, 100% { transform:translate(0,0) }
+  50% {transform:translate(0,-1vh)}
+}
+

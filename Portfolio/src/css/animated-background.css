@@ -34,13 +34,13 @@ header {
 
 .page-title {
     opacity: 0;
-    transform: translateX(-100%);
     animation: slideIn 3s forwards;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-0%, -50%);
     z-index: 1; 
-
     font-family: 'Montserrat', sans-serif;
+    font-size: 12vh;
+    font-weight: 400;
     color: #000000;
 }
 @keyframes page-title {
@@ -105,15 +105,17 @@ h1{
     box-sizing: border-box;
     position: absolute;
     opacity: 0;
-    animation: fade-up 1s ease 3s forwards;
-    border: 3px solid red;
-    padding:1vh;
+    animation: fade-up 1s ease 1s forwards;
+
     color: #000000;
     transition: 0.3s ease;
-    width: 10%;
-    min-width: 150px;
-    font-weight:200;
+    width: 1%;
+    min-height:40px;
+    min-width: 110px;
+    font-weight:500;
     border-radius: 10px;
+    font-size:14px;
+    background-color: rgb(224, 224, 224)
 }
 
 .cv-link:hover{
@@ -125,17 +127,39 @@ h1{
     animation: fade-up 2s ease 4s forwards
 }
 
-.cv-icon{
-    width:20vw;
-    height: auto;
-    filter: invert(1);
-    border: solid rgb(0, 255, 255) 2px;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    border-radius: 20px;
-    transition: 0.3s ease;
+
+
+.typewriter{
+display:inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  opacity: 0;
+  font-size: 3vh;
+  animation: 
+  reveal 0s forwards 2s,
+    typing 1.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+    animation-delay: 2s;
+    padding-left: 0.5vw;
 }
 
-.cv-icon:hover{
-    background-color: #00ffff;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0%,100% { border-color:white  }
+  50% { border-color: rgb(0, 0, 0)}
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+    }
 }

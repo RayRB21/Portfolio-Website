@@ -1,5 +1,6 @@
 import ProjectTemplate from "../components/ProjectTemplate";
 import { useInView } from "../components/ScrollAnimation";
+import Coin from "../components/Coin";
 
 function Projects() {
   const { ref, isVisible } = useInView(0.5);
@@ -14,6 +15,7 @@ function Projects() {
           Projects
         </h1>
       </div>
+      {/*<Coin style={{ top: "170vw", left: "120vh" }} />*/}
       <div
         className={`content animate-on-scroll ${isVisible ? "animate" : ""}`}
       >
