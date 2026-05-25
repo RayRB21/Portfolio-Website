@@ -1,6 +1,6 @@
 import "../css/contact.css";
 import { useInView } from "../components/ScrollAnimation";
-import Coin from "../components/Coin";
+/*import Coin from "../components/Coin";*/
 import ContactForm from "../components/ContactForm";
 
 function Contact() {

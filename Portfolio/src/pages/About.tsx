@@ -1,6 +1,6 @@
 import "../css/about.css";
 import { useInView } from "../components/ScrollAnimation";
-import Coin from "../components/Coin";
+/*import Coin from "../components/Coin";*/
 
 function About() {
   const { ref, isVisible } = useInView(0.2);

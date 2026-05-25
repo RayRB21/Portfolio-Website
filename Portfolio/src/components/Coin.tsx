@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import type { CSSProperties } from "react";
 
 type CoinProps = {
@@ -31,3 +31,4 @@ function Coin({ style }: CoinProps) {
 }
 
 export default Coin;
+*/

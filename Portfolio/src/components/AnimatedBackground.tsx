@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../css/animated-background.css";
-import Coin from "./Coin";
+/*import Coin from "./Coin";*/
 
 const AnimatedBackground = () => {
   const headerRef = useRef<HTMLElement | null>(null);

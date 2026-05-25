@@ -1,6 +1,6 @@
 import ProjectTemplate from "../components/ProjectTemplate";
 import { useInView } from "../components/ScrollAnimation";
-import Coin from "../components/Coin";
+/*import Coin from "../components/Coin";*/
 
 function Projects() {
   const { ref, isVisible } = useInView(0.5);
