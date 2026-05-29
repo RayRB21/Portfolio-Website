@@ -5,19 +5,6 @@
 }
 
 
-.slide-in {
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 * {
     margin: 0; 
     padding: 0;
@@ -34,21 +21,26 @@ header {
 
 .page-title {
     opacity: 0;
-    animation: slideIn 3s forwards;
-
+    animation: page-title 3s forwards;
     transform: translate(-0%, -50%);
     z-index: 1; 
     font-family: 'Montserrat', sans-serif;
     font-size: 12vh;
-    font-weight: 400;
-    color: #000000;
+    font-weight: 600;
+    color: red
 }
+
+
+
 @keyframes page-title {
   to {
     opacity: 1;
-    transform: translateX(0); 
+    color: black;
+    transform: translateY(0); 
   }
 }
+
+
 
 
 h1{
@@ -131,11 +123,11 @@ h1{
 
 .typewriter{
 display:inline-block;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 2px solid; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: 2px solid;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .05em; 
   opacity: 0;
   font-size: 3vh;
   animation: 

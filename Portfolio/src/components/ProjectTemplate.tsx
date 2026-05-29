@@ -36,13 +36,13 @@ function ProjectTemplate({
             {projectDesc}
           </p>
           <div className="row" style={{ marginTop: "5%" }}>
-            <div className="col-md-3"></div>
-            <div className="col-md-3">
+            <div className="col-md-3" />
+            <div className="col-md-3 col-6">
               <a href={appLink}>
                 <h6 className="link-button">Live App</h6>
               </a>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3 col-6">
               <a href={projectLink}>
                 <h6 className="link-button">GitHub</h6>
               </a>

@@ -13,6 +13,10 @@ function About() {
     { name: "Flask", img: "/flask-logo.webp" },
     { name: "Go", img: "/Go-Logo.png" },
     { name: "Java", img: "/logos/java_logo.png" },
+    { name: "GH Actions", img: "github-actions-logo.png" },
+    { name: "PyTorch", img: "PyTorch_logo_icon.png" },
+    { name: "Heroku", img: "heroku-icon.webp" },
+    { name: "SQL", img: "sql-logo.png" },
   ];
 
   return (
@@ -52,7 +56,7 @@ function About() {
           <div className="row">
             {skills.map((skill) => (
               <div
-                className="col-md-3"
+                className="col-md-2 col-3"
                 key={skill.name}
                 style={{ marginBottom: "2vh" }}
               >

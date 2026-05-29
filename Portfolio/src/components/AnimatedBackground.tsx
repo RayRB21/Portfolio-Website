@@ -101,7 +101,7 @@ const AnimatedBackground = () => {
           <div className="col-md-3"></div>
           <div className="col-md-7">
             <div className="page-title">
-              <span>Rayan Butt</span>
+              <span className="letter">Rayan Butt</span>
             </div>
             <div style={{ display: "inline-block" }}>
               <span className="typewriter" style={{ color: "red" }}>
@@ -112,14 +112,14 @@ const AnimatedBackground = () => {
         </div>
       </div>
       <div className="row" style={{ marginTop: "2vh" }}>
-        <div className="col-md-6">
+        <div className="col-6">
           <a href="/Rayan-Butt-CV.pdf" className="d-flex justify-content-end">
             <h5 className="cv-link d-flex align-items-center justify-content-center">
               Download CV
             </h5>
           </a>
         </div>
-        <div className="col-md-6">
+        <div className="col-6">
           <a href="#contact">
             <h5 className="cv-link d-flex align-items-center justify-content-center">
               Contact Me

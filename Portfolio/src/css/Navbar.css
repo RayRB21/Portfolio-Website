@@ -2,8 +2,15 @@
   background-color: #ffffff; 
   max-width: 500px;
   border-radius: 30px;
-  border: 1px solid rgba(124, 122, 122, 0.603);
+  border: 2px solid rgba(124, 122, 122, 0.603);
   top: 10px;
+  transition: 0.5s ease;
+}
+
+.custom-navbar:hover{
+    box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.4),
+    0 0 10px rgba(255, 0, 0, 0.08);
 }
 
 @keyframes fade-down {
@@ -21,12 +28,12 @@
 
 .nav-link{
   color: black;
-  font-size:medium;
-  font-weight: 400;
+  font-size:13px;
+  font-weight: 500;
 }
 
 .nav-logo {
-  width: 13px;
+  width: 11px;
   height: auto;
   margin-right: 3px;
 

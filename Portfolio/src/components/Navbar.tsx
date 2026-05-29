@@ -7,11 +7,11 @@ interface Props {
 function Navbar({ navColor }: Props) {
   return (
     <nav
-      className=" container navbar navbar-expand-lg navbar-dark custom-navbar py-2 sticky-top"
+      className=" container navbar navbar-expand navbar-dark custom-navbar py-1 sticky-top"
       style={{ backgroundColor: navColor }}
     >
       <div
-        className="justify-content-center collapse navbar-collapse"
+        className="justify-content-center navbar-nav flex-row flex-nowrap w-100"
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav">
