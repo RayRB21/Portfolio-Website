@@ -113,7 +113,10 @@ const AnimatedBackground = () => {
       </div>
       <div className="row" style={{ marginTop: "2vh" }}>
         <div className="col-6">
-          <a href="/Rayan-Butt-CV.pdf" className="d-flex justify-content-end">
+          <a
+            href="/Rayan-Butt-CV-2026.pdf"
+            className="d-flex justify-content-end"
+          >
             <h5 className="cv-link d-flex align-items-center justify-content-center">
               Download CV
             </h5>
